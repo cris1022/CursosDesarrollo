@@ -1,0 +1,1 @@
+print ("Tu nombre completo es:  "+ input("Escribe tu nombre: ") + " " + input("Escribe tu apellido:"))

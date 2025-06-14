@@ -1,0 +1,17 @@
+Tipos de datos en Python y su espacio de memoria (aproximado en sistemas de 64 bits):
+
+Tipo de Dato     | Descripción                                 | Tamaño Aproximado
+------------------|---------------------------------------------|-------------------------------
+int              | Números enteros                             | 28 bytes (más si es más grande)
+float            | Números decimales (coma flotante)           | 24 bytes (base)
+bool             | Booleano (True o False)                     | 28 bytes
+str              | Cadenas de texto                            | 49 bytes + 1 byte por carácter
+list             | Listas ordenadas                            | 64 bytes + 8 bytes por elemento
+tuple            | Tuplas ordenadas (inmutables)               | 48 bytes + 8 bytes por elemento
+dict             | Diccionarios (clave-valor)                  | 240 bytes + por entradas
+set              | Conjunto sin duplicados                     | 216 bytes + por elemento
+bytes            | Secuencia de bytes inmutable                | 33 bytes + tamaño del contenido
+bytearray        | Secuencia de bytes mutable                  | similar a bytes, pero mutable
+
+Nota: Python gestiona la memoria dinámicamente, por lo que estos tamaños son estimados.
+Puedes usar sys.getsizeof(objeto) para ver el tamaño exacto en tiempo de ejecución.
